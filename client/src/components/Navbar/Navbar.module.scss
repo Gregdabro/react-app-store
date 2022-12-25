@@ -1,0 +1,70 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+
+  .navLinks {
+    text-transform: uppercase;
+    display: flex;
+    gap: 20px;
+
+    .logout {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      button,
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background: none;
+        font-size: 1rem;
+        text-transform: uppercase;
+
+        svg {
+          font-size: 28px;
+        }
+      }
+
+      a {
+        text-transform: uppercase;
+        color: var(--black-color);
+        padding-block: 10px;
+
+        &:hover {
+          color: var(--brown-color);
+        }
+      }
+    }
+
+    .cartLink {
+      position: relative;
+      .amountWrapper {
+        position: absolute;
+        top: -0.6rem;
+        right: -0.6rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background: royalblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          display: flex;
+          color: white;
+          margin-bottom: 4px;
+          font-size: 1.25rem;
+        }
+      }
+      svg {
+        font-size: 30px;
+      }
+    }
+  }
+}

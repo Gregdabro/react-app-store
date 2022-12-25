@@ -1,0 +1,151 @@
+.dashBoard {
+  display: flex;
+  width: 100%;
+
+  .sideBar {
+    flex: 1;
+    border-right: 0.5px solid rgb(230, 227, 227);
+    min-height: 100vh;
+
+    .sideBarTop {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 0.5px solid rgb(230, 227, 227);
+
+      .logo {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+
+    .sideBarMain {
+      margin-top: 10px;
+
+      .item {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #eee;
+        }
+
+        .icon {
+          font-size: 18px;
+          color: #7451f8;
+        }
+
+        span {
+          font-size: 20px;
+          font-weight: 500;
+          color: #888;
+        }
+      }
+    }
+  }
+
+  .content {
+    overflow: hidden;
+    flex: 6;
+
+    .navbar {
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 0.5px solid rgb(230, 227, 227);
+      padding: 0 20px;
+
+      h2 {
+        font-size: 24px;
+        text-transform: capitalize;
+        font-weight: 400;
+        color: gray;
+        display: flex;
+        height: 100%;
+        align-items: center;
+      }
+
+      .link {
+        text-transform: uppercase;
+        color: white;
+        background-color: green;
+        font-size: 16px;
+        font-weight: 600;
+        border: 1px solid green;
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .mainSection {
+      min-height: 900px;
+      overflow: auto;
+
+      table {
+        width: 100%;
+        table-layout: auto;
+        min-width: 1000px;
+        border-collapse: collapse;
+
+        thead th {
+          background-color: whitesmoke;
+          color: #646363;
+          text-transform: uppercase;
+          font-size: 13px;
+        }
+
+        th,
+        td {
+          border-bottom: 1px solid #ddd;
+          padding: 10px 20px;
+          text-align: center;
+        }
+
+        td img {
+          background: #979797;
+          height: 60px;
+          width: 60px;
+          object-fit: contain;
+          border-radius: 15px;
+          border: 1px solid #ced0d2;
+        }
+
+        td button {
+          font-size: 25px;
+          cursor: pointer;
+          border: none;
+          background: none;
+          transition: color 0.3s ease;
+        }
+        td button:nth-child(1) {
+          color: #343434;
+
+          &:hover {
+            color: #979797;
+          }
+        }
+
+        td button:nth-child(2) {
+          color: crimson;
+
+          &:hover {
+            color: #979797;
+          }
+        }
+
+        tbody tr:nth-child(even) {
+          background-color: #f5f5f5;
+        }
+        tbody tr:nth-child(odd) {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.productList {
+  display: grid;
+  gap: 25px 25px;
+
+  @media (min-width: 575px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.productCard {
+  border: 1px solid #ededed;
+
+  &:hover,
+  &:focus {
+    .imageContain {
+      transform: scale(1.1);
+    }
+
+    .cardAction {
+      right: 20px;
+      opacity: 1;
+    }
+  }
+
+  .cardBanner {
+    background: #ccc;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+
+    .imageContain {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      transition: 0.5s ease;
+    }
+
+    .cardBadge {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      background: orangered;
+      color: white;
+      font-weight: 600;
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+  }
+
+  .cardAction {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    .cardActionBtn {
+      position: relative;
+      background: white;
+      color: black;
+      font-size: 21px;
+      padding: 7px;
+      border-radius: 50%;
+      transition: all 0.5s ease;
+      border: none;
+
+      &:hover,
+      &:focus {
+        background: orangered;
+        color: white;
+      }
+    }
+  }
+
+  .cardContent {
+    padding: 24px 15px;
+    text-align: center;
+
+    .cardTitle {
+      text-transform: capitalize;
+      font-weight: 500;
+      margin-bottom: 12px;
+
+      a {
+        color: inherit;
+        transition: all 0.3s ease;
+
+        &:hover,
+        &:focus {
+          color: orangered;
+        }
+      }
+    }
+
+    .cardPrice {
+      color: orangered;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+}

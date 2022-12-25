@@ -1,0 +1,15 @@
+.orderProduct {
+  width: 100%;
+  display: flex;
+  text-align: left;
+
+  .name {
+    flex: 4;
+  }
+  .icon {
+    flex: 1;
+  }
+  .amount {
+    flex: 1;
+  }
+}

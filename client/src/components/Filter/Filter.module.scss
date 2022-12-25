@@ -1,0 +1,30 @@
+.filterWrapper {
+  background-color: #fff;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  transition: top 0.3s;
+  min-height: 70px;
+  padding: 1rem;
+
+  .listBtn {
+    flex: 7;
+  }
+
+  .search {
+    display: flex;
+    justify-content: flex-end;
+    flex: 4;
+  }
+
+  .select {
+    select {
+      width: 80%;
+      height: 30px;
+    }
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

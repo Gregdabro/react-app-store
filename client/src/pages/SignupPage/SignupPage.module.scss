@@ -1,0 +1,39 @@
+.signupForm {
+  position: relative;
+  width: 700px;
+  min-height: 500px;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  overflow: hidden;
+
+  .formWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+
+    .signInlLink {
+      font-size: 14px;
+      text-align: center;
+      margin: 15px 0;
+
+      p {
+        color: #343434;
+      }
+      a {
+        color: royalblue;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

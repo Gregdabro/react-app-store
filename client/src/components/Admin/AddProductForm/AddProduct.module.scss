@@ -1,0 +1,27 @@
+.addNewProduct {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  form {
+    max-width: 500px;
+    .select {
+      margin: 30px 0;
+    }
+    button {
+      margin-bottom: 30px;
+    }
+  }
+
+  .error {
+    align-self: flex-start;
+    height: 40px;
+    color: red;
+  }
+}

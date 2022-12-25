@@ -1,0 +1,57 @@
+.inputBox {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid #343434;
+
+  .inputWrapper {
+    position: relative;
+    .input {
+      width: 500px;
+      height: 40px;
+      font-size: 16px;
+      color: #343434;
+      padding: 0 5px;
+      background: white;
+      border: none;
+      outline: none;
+
+      &:focus ~ .label {
+        top: -5px;
+      }
+    }
+
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 40px white inset;
+    }
+
+    .label {
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+      color: #979797;
+      pointer-events: none;
+      transition: 0.5s;
+    }
+
+    .labelActive {
+      position: absolute;
+      top: -5px;
+      left: 5px;
+      transform: translateY(-50%);
+      color: #979797;
+      pointer-events: none;
+      transition: 0.5s;
+    }
+  }
+
+  .error {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    color: orangered;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+}
